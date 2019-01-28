@@ -1,7 +1,8 @@
 <a 
   href="#" 
   class="list-group-item clearfix"
-  *ngIf="recipe && recipe.name">
+  *ngIf="recipe && recipe.name"
+  (click)="onSelected()">
 
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
