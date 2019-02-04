@@ -29,6 +29,12 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     );
   }
 
+  resetForm() {
+    this.editMode = false;
+    this.editedItemIndex = null;
+    this.slFrom.reset();
+  }
+
   onSubmitForm(form: NgForm) {
     const value = form.value;
 
@@ -40,12 +46,6 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     }
 
     this.resetForm();
-  }
-
-  resetForm() {
-    this.editMode = false;
-    this.editedItemIndex = null;
-    this.slFrom.reset();
   }
 
   onDelete() {
