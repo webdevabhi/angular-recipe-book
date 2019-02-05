@@ -2,6 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
+## Repo changes
+create a config file to keep all secrets key and values.
+--src
+  --config
+    --config.ts
+
+config.ts file looks like:
+`
+export default  {
+    firebase: {
+        apiKey: 'FIREBASE_API_KEY',
+        authDomain: 'FIREBASE_AUTH_DOMAIN'
+    }
+}
+`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
