@@ -4,7 +4,8 @@ import { Ingredient } from '../shared/ingredient.model';
 import { ShoppingListService } from '../shopping-list/shopping-list.service';
 import { Subject } from 'rxjs/Subject';
 
-@Injectable({providedIn: 'root'})
+// @Injectable({providedIn: 'root'})
+@Injectable() // As we are injecting in core module
 export class RecipeService {
     recipeChanged = new Subject<Recipe[]>();
 
