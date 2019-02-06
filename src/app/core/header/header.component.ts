@@ -13,6 +13,10 @@ export class HeaderComponent {
     private authService: AuthService
   ) {}
 
+  isAuthenticated() {
+    return this.authService.isAuthenticated();
+  }
+
   onSaveData() {
     this.dataStorageService.storeRecipes()
       .subscribe(
