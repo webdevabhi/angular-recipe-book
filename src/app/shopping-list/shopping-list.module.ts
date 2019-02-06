@@ -13,8 +13,7 @@ import { ShoppingEditComponent } from './shopping-edit/shopping-edit.component';
     imports: [
         CommonModule,
         FormsModule
-     ],
-    exports: [],
+    ],
     providers: [],
 })
 export class ShoppingListModule {}
